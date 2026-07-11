@@ -954,26 +954,36 @@ a {
 }
 
 /* ================= MOBILE ================= */
-@media (max-width:767px) {
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
 
   .hero {
-    min-height: 100vh;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .hero__nav {
-    flex-wrap: wrap;
+  .hero__portrait-wrap {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+
+    width: 220px;
+    margin: 30px auto;
+
+    display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
   }
 
-  .hero__nav a {
-    font-size: 14px;
-  }
-
-  .hero__title {
-    font-size: 18vw;
-    text-align: center;
+  .hero__portrait {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .hero__bottom {
@@ -985,107 +995,11 @@ a {
 
   .hero__desc {
     max-width: 100%;
-  }
-
-  .hero__portrait-wrap {
-    position: relative;
-    width: 220px;
-    margin: 30px auto 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    transform: none;
-  }
-
-  .about {
-    padding: 70px 20px;
-  }
-
-  .about__title-wrap h2 {
-    font-size: 3rem;
-  }
-
-  .about__text {
-    width: 100%;
-    max-width: 100%;
-    font-size: 1rem;
-    line-height: 1.8;
-    text-align: center;
+    order: 2;
   }
 
   .contact-buttons {
+    order: 3;
     justify-content: center;
-    gap: 12px;
-  }
-
-  .glass-btn {
-    width: 170px;
-    text-align: center;
-  }
-
-  .about__deco {
-    display: none;
-  }
-
-  .skills__title,
-  .services__title,
-  .projects__title-wrap h2 {
-    font-size: 3rem;
-  }
-
-  .footer__cta {
-    font-size: 2.5rem;
-  }
-
-  .footer__bottom {
-    flex-direction: column;
-  }
-}
-
-/* ================= TABLET ================= */
-@media (min-width:768px) and (max-width:1024px) {
-
-  .hero__title {
-    font-size: 15vw;
-  }
-
-  .hero__portrait-wrap {
-    width: 330px;
-  }
-
-  .hero__bottom {
-    gap: 30px;
-  }
-
-  .about {
-    padding: 90px 40px;
-  }
-
-  .about__title-wrap h2 {
-    font-size: 5rem;
-  }
-
-  .about__text {
-    width: 90%;
-    max-width: 700px;
-    font-size: 1.2rem;
-  }
-
-  .contact-buttons {
-    gap: 18px;
-  }
-
-  .about__deco--tl,
-  .about__deco--tr {
-    width: 140px;
-  }
-
-  .about__deco--bl,
-  .about__deco--br {
-    width: 120px;
-  }
-
-  .footer__cta {
-    font-size: 5rem;
   }
 }

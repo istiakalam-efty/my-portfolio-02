@@ -198,7 +198,7 @@ a {
 
 .hero__portrait-wrap {
   position: absolute;
-  left: 50%;
+  left: 30%;
   transform: translateX(-50%);
   z-index: 10;
   top: 50%;
